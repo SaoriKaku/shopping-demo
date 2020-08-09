@@ -1,0 +1,361 @@
+
+body {
+    font: 14px/1.5 Times New Roman, Times, Helvetica, Arial;
+    color: #000;
+    background-color: #fff;
+}
+.page {
+    width: 1300px;
+    margin: 0 auto;
+}
+/* 去顶部TOP标签 */
+.top {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 9999;
+}
+.top a {
+    color: #c8c8c8;
+}
+
+/* 顶部固定导航栏 */
+header {
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9990;
+}
+/* 黑色固定导航栏 */
+header .topbar-black {
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+/* 白色固定导航栏 */
+header .topbar-nav {
+    display: flex;
+    height: 70px;
+    background-color: #fff;
+    justify-content: space-between;
+    position: relative;
+}
+header .topbar-nav img{
+    height: 36px;
+    width: 36px;
+    margin-top: 17px;
+}
+/* 白色固定导航栏：左侧导航条 */
+header .topbar-nav ul:first-child{
+    display: flex;
+}
+.topbar-nav ul:first-child li {
+    padding-right: 10px;
+}
+.topbar-nav ul:first-child a {
+    display: block;
+    height: 22px;
+    margin-top: 24px;
+}
+/* 白色固定导航栏：左侧导航条，a标签下划线 */
+.topbar-nav ul:first-child a:hover {
+    border-bottom: 4px solid #000;
+}
+/* 白色固定导航栏：左侧导航条，bags下拉菜单 */
+.topbar-nav .bags-dropdown {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background: url(../img/dropdown_bg.jpg);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.topbar-nav .bags:hover ~ .bags-dropdown, .topbar-nav .bags-dropdown:hover {
+    display: flex;
+}
+.topbar-nav .bags-dropdown .bold {
+    font-weight: 700;
+}
+.topbar-nav .bags-dropdown ol {
+    margin-top: 20px;
+}
+.topbar-nav .bags-dropdown li {
+    margin-bottom: 10px;
+}
+.topbar-nav .bags-dropdown img {
+    height: 250px;
+    width: 250px;
+    margin: auto 0;
+}
+/* 白色固定导航栏：左侧导航条，accessory下拉菜单 */
+.topbar-nav .accessories-dropdown {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../img/dropdown_bg.jpg);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.topbar-nav .accessories:hover ~ .accessories-dropdown, .topbar-nav .accessories-dropdown:hover {
+    display: flex;
+}
+.topbar-nav .accessories-dropdown ol {
+    margin-top: 20px;
+}
+.topbar-nav .accessories-dropdown li {
+    margin-bottom: 10px;
+}
+.topbar-nav .accessories-dropdown img {
+    height: 250px;
+    width: 250px;
+    margin: auto 0;
+}
+/* 白色固定导航栏：左侧导航条，experience下拉菜单 */
+.topbar-nav .experience-dropdown {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url(../img/dropdown_bg.jpg);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.topbar-nav .experience:hover ~ .experience-dropdown, .topbar-nav .experience-dropdown:hover {
+    display: flex;
+}
+.topbar-nav .experience-dropdown img {
+    height: 250px;
+    width: 250px;
+    margin: auto 10px;
+}
+/* 白色固定导航栏：右导航条 */
+header .topbar-nav ul:last-child{
+    display: flex;
+}
+.topbar-nav ul:last-child li {
+    margin-left: 10px;
+    line-height: 70px;
+}
+/* 中部大图片 */
+.photo img{
+    width: 100%;
+}
+/* 中部标题 */
+.title {
+    font-weight: 700;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+/* 图片区 */
+main {
+    position: relative;
+    background-color: #fff;
+    height: 2020px;
+}
+/* 第一张图片：沙滩 */
+main .beach {
+    background: url(../img/sea.jpg) left top/810px 500px no-repeat;
+    text-align: center;
+    width: 810px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main .beach .island {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 440px;
+    margin: 30px auto;
+    display: none;
+}
+main .island img {
+    height: 75%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .beach:hover .island {
+    display: block;
+}
+/* 第二章图片：车 */
+main .car {
+    background: url(../img/cars.jpg) left top/480px 800px no-repeat;
+    text-align: center;
+    width: 480px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+main .car .dodge {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 740px;
+    margin: 30px auto;
+    display: none;
+}
+main .dodge img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .car:hover .dodge {
+    display: block;
+}
+/* 第三张图片：抢 */
+main .gun {
+    background: url(../img/guns.jpg) left top/480px 800px no-repeat;
+    text-align: center;
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    top: 510px;
+    left: 0;
+}
+main .gun .rifle {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 740px;
+    margin: 30px auto;
+    display: none;
+}
+main .rifle img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .gun:hover .rifle {
+    display: block;
+}
+/* 第四张图片：电影 */
+main .clown {
+    background: url(../img/jocker.jpg) left top/400px 1100px no-repeat;
+    text-align: center;
+    width: 400px;
+    height: 1000px;
+    position: absolute;
+    top: 510px;
+    left: 410px;
+}
+main .clown .theater {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 940px;
+    margin: 30px auto;
+    display: none;
+}
+main .theater img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .clown:hover .theater {
+    display: block;
+}
+/* 第五张图片：游戏 */
+main .game {
+    background: url(../img/games.jpg) left top/480px 700px no-repeat;
+    text-align: center;
+    width: 480px;
+    height: 700px;
+    position: absolute;
+    top: 810px;
+    right: 0;
+}
+main .game .switch {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 640px;
+    margin: 30px auto;
+    display: none;
+}
+main .switch img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .game:hover .switch {
+    display: block;
+}
+/* 第六张图片：钻石 */
+main .diamond {
+    background: url(../img/tiffany_tiffany_and_co_ring_jewel_104485_720x1280.jpg) left top/400px 690px no-repeat;
+    text-align: center;
+    width: 400px;
+    height: 690px;
+    position: absolute;
+    top: 1320px;
+    left: 0;
+}
+main .diamond .tiffany {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 630px;
+    margin: 30px auto;
+    display: none;
+}
+main .tiffany img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .diamond:hover .tiffany {
+    display: block;
+}
+/* 第七张图片：钻石 */
+main .steak {
+    background: url(../img/steak.jpg) left top/890px 490px no-repeat;
+    text-align: center;
+    width: 890px;
+    height: 490px;
+    position: absolute;
+    top: 1520px;
+    right: 0;
+}
+main .steak .meal {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 430px;
+    margin: 30px auto;
+    display: none;
+}
+main .meal img {
+    height: 70%;
+    width: 80%;
+    margin-top: 20px;
+}
+main .steak:hover .meal {
+    display: block;
+}
+/* 底部 */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
