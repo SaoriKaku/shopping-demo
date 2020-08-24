@@ -52,7 +52,7 @@ header .topbar-nav {
     justify-content: space-between;
     position: relative;
 }
-header .topbar-nav img{
+header .topbar-nav .icon{
     height: 36px;
     width: 36px;
     margin-top: 17px;
@@ -65,13 +65,14 @@ header .topbar-nav ul:first-child{
     padding-right: 10px;
 }
 .topbar-nav ul:first-child a {
-    display: block;
-    height: 22px;
+    display: inline-block;
+    height: 26px;
     margin-top: 24px;
 }
 /* 白色固定导航栏：左侧导航条，a标签下划线 */
 .topbar-nav ul:first-child a:hover {
-    border-bottom: 4px solid #000;
+    /* border-bottom: 4px solid #000; */
+    background: url(../img/line-clay-bg.svg) 0 20px/100% 4px no-repeat ;
 }
 /* 白色固定导航栏：左侧导航条，bags下拉菜单 */
 .topbar-nav .bags-dropdown {
